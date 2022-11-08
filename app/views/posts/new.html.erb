@@ -1,13 +1,11 @@
-<h1>Create Post</h1>
-
-<%= form_with model: @post, url: user_posts_path(@current_user), method: :post, local: true, scope: :user_posts do |f| %>
+<%= form_with model: @post, url: user_posts_path(current_user), method: :post, local: true, scope: :user_posts do |form| %>
   <div class="form-group">
-    <%= f.text_field :title, class: "form-control m-2 w-75", placeholder: "Title" %>
+    <%= form.text_field :title, class: "form-control m-2 w-75", placeholder: "Title" %>
   </div>
 
   <div class="form-group">
-    <%= f.text_field :text, class: "form-control m-2 w-75", placeholder: "Post text" %>
+    <%= form.text_field :text, class: "form-control m-2 w-75", placeholder: "Post text" %>
   </div>
 
-  <%= f.submit class:'btn btn-secondary m-2' %>
+  <%= form.submit class:'btn btn-secondary m-2' %>
 <% end %>

@@ -1,26 +1,34 @@
-require_relative '../helpers/posts_helper'
 class PostsController < ApplicationController
-  include PostsHelper
-  def index
-    @current_user = current_user
-    @user = User.find(params[:user_id])
-    @posts = @user.posts
-  end
+  before_action :authenticate_user!
 
   def show
-    @current_user = current_user
+    @posts_per_page = 2
+    @user = User.find(params[:user_id])
+    @page = params.fetch(:page, 1)
+    @posts = @user.posts[2 * (@page.to_i - 1), @posts_per_page]
     @post = Post.find(params[:id])
-    @comments = @post.comments.includes(:author)
+    @comms = @post.comments.includes(:author)
   end
 
   def new
-    @current_user = current_user
+    @posts_per_page = 2
+    @user = User.find(params[:user_id])
+    @page = params.fetch(:page, 1)
+    @posts = @user.posts[2 * (@page.to_i - 1), @posts_per_page]
     @post = Post.new
+    respond_to do |format|
+      format.html { render :new, locals: { post: @post } }
+    end
   end
 
   def create
-    @current_user = current_user
-    post = Post.new(post_params)
+    @posts_per_page = 2
+    @user = User.find(params[:user_id])
+    @page = params.fetch(:page, 1)
+    @posts = @user.posts[2 * (@page.to_i - 1), @posts_per_page]
+    post = Post.new
+    post.title = params[:user_posts][:title]
+    post.text = params[:user_posts][:text]
     post.author = current_user
     respond_to do |format|
       format.html do
