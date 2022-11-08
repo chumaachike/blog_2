@@ -17,4 +17,9 @@ RSpec.describe User, type: :model do
     expect(user).to_not be_valid
   end
 
+  it 'PostsCounter must be an integer greater than or equal to zero' do
+    expect(user.post_counter).to be_an(Numeric)
+    expect(user.post_counter).to be >= 0
+  end
+
 end
