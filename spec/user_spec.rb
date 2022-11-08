@@ -38,4 +38,11 @@ RSpec.describe User, type: :model do
     expect(new_user.recent_posts[0].title).to eql('Something 1')
   end
 
+  it 'Recent posts must have size 2' do
+    new_user = User.create(name: 'Anyone else')
+    Post.create(title: 'Something 1', author: new_user)
+    Post.create(title: 'Something 2', author: new_user)
+    expect(new_user.recent_posts.size).to be(2)
+  end
+
 end
