@@ -20,7 +20,7 @@ RSpec.describe User, type: :model do
 
 
   it 'Name must not be blank' do
-    user.name = ' '
+    user.name = ""
     expect(user).to_not be_valid
   end
 
@@ -29,21 +29,22 @@ RSpec.describe User, type: :model do
   end
 
   it 'Recent posts must not be empty array' do
-    new_user = User.create(name: 'Anyone else')
-    Post.create(title: 'Something 1', author: new_user)
+    new_user = User.create(name: 'Big G')
+
+    Post.create(title: 'Artist', author: new_user)
     expect(new_user.recent_posts.size).to be(1)
   end
 
   it 'Recent posts must have title Something 1' do
-    new_user = User.create(name: 'Anyone else')
-    Post.create(title: 'Something 1', author: new_user)
-    expect(new_user.recent_posts[0].title).to eql('Something 1')
+    new_user = User.create(name: 'Akon')
+    Post.create(title: 'Konvict', author: new_user)
+    expect(new_user.recent_posts[0].title).to eql('konvict')
   end
 
   it 'Recent posts must have size 2' do
     new_user = User.create(name: 'Anyone else')
-    Post.create(title: 'Something 1', author: new_user)
-    Post.create(title: 'Something 2', author: new_user)
+    Post.create(title: 'Trouble', author: new_user)
+    Post.create(title: 'Freedom', author: new_user)
     expect(new_user.recent_posts.size).to be(2)
   end
 
