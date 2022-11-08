@@ -12,4 +12,9 @@ RSpec.describe User, type: :model do
     expect(user).to_not be_valid
   end
 
+  it 'Name must not be blank' do
+    user.name = ' '
+    expect(user).to_not be_valid
+  end
+
 end
