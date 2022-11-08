@@ -12,6 +12,7 @@
   </head>
 
   <body>
+  <%= link_to 'Add post', new_user_post_path(@current_user), class: "text-decoration-none" %>
     <%= yield %>
   </body>
 </html>
