@@ -22,4 +22,8 @@ RSpec.describe User, type: :model do
     expect(user.post_counter).to be >= 0
   end
 
+  it 'Recent posts must be empty array' do
+    expect(user.recent_posts.size).to be(0)
+  end
+
 end
