@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-
   user = User.new(name: 'Anyone')
 
   it 'is not valid without a name' do
@@ -18,9 +17,8 @@ RSpec.describe User, type: :model do
     expect(user.post_counter).to be >= 0
   end
 
-
   it 'Name must not be blank' do
-    user.name = ""
+    user.name = ''
     expect(user).to_not be_valid
   end
 
@@ -66,5 +64,4 @@ RSpec.describe User, type: :model do
     expect(new_user.recent_posts[1].title).to eql('Something 3')
     expect(new_user.recent_posts[2].title).to eql('Something 2')
   end
-
 end
