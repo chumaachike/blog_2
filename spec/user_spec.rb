@@ -53,4 +53,15 @@ RSpec.describe User, type: :model do
     expect(new_user.recent_posts.size).to be(3)
   end
 
+  it 'Recent posts must must have the recent posts' do
+    new_user = User.create(name: 'Anyone else')
+    Post.create(title: 'Something 1', author: new_user)
+    Post.create(title: 'Something 2', author: new_user)
+    Post.create(title: 'Something 3', author: new_user)
+    Post.create(title: 'Something 4', author: new_user)
+    expect(new_user.recent_posts[0].title).to eql('Something 4')
+    expect(new_user.recent_posts[1].title).to eql('Something 3')
+    expect(new_user.recent_posts[2].title).to eql('Something 2')
+  end
+
 end
