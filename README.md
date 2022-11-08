@@ -36,6 +36,7 @@ Cloning a repository
 
   - To clone the repository using HTTPS : `https://github.com/chumaachike/Blog_App.git`
 
+
   - To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority : `git@github.com:chumaachike/Blog_App.git`
 
   - To clone a repository using GitHub CLI : `gh repo clone chumaachike/Blog_App`
@@ -45,6 +46,7 @@ Cloning a repository
 - Change the current working directory to the location where you want the cloned directory;
 
 - Type `git clone`, and then paste the URL you copied earlier.
+
 
 ### install required gems
 
