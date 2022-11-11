@@ -61,24 +61,11 @@ To run the tests:
 
 ## Authors
 
-👤 **Elson Otake**
+👤 **Francis Wayungi**
 
-- GitHub: [@elsonotake](https://github.com/elsonotake)
-- Twitter: [@elsonotake](https://twitter.com/elsonotake)
-- LinkedIn: [elsonotake](https://linkedin.com/in/elsonotake)
-
-👤 **Jesús Vázquez**
-
-- GitHub: [@jevazquezb](https://github.com/jevazquezb)
-- Twitter: [@javb_1187](https://twitter.com/javb_1187)
-- LinkedIn: [@jevazquezb](https://www.linkedin.com/in/jevazquezb)
-
-👤 **Addisu Haile**
-
-- GitHub: [@Addisu87](https://github.com/Addisu87)
-- Twitter: [@AddisuTedla](https://twitter.com/AddisuTedla)
-- LinkedIn: [Addisu Tedla](www.linkedin.com/in/addisu-tedla/)
-
+- GitHub: [@githubhandle](https://github.com/wayungi)
+- Twitter: [@twitterhandle](https://twitter.com/FrancisWayungi)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/francis-wayungi)
 
 ## 🤝 Contributing
 
