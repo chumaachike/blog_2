@@ -61,6 +61,12 @@ To run the tests:
 
 ## Authors
 
+👤 **Achike Chuma Edward**
+
+- GitHub: [@chumaachike](https://github.com/chumaachike)
+- Twitter: [@AchikeChuma](https://twitter.com/AchikeChuma)
+- LinkedIn: [Edward Achike](https://www.linkedin.com/in/edwardachike/)
+
 👤 **Francis Wayungi**
 
 - GitHub: [@githubhandle](https://github.com/wayungi)
