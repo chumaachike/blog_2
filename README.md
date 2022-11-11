@@ -1,19 +1,14 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Blog app
 
-# Blog_App
-
-> In this project we are creating a blog app 
+> The Blog app is a classic example of a blog website. That show the list of posts and empower readers to interact with them by adding comments and liking posts. This is the used [data model](./lib/assets/blog_app_erd.png).
 
 
-### Built With
+## Built With
 
 - Ruby on Rails
 - Rspec
 - SQL 
 - Postgresql
-
-
-## Live Demo
 
 
 ## Getting Started
@@ -34,48 +29,24 @@ Cloning a repository
 
 - Copy the URL to clone the repository. 
 
-  - To clone the repository using HTTPS : `https://github.com/chumaachike/Blog_App.git`
+  - To clone the repository using HTTPS : `https://github.com/ElsonOtake/Blog_App.git`
 
-  - To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority : `git@github.com:chumaachike/Blog_App.git`
+  - To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority : `git@github.com:ElsonOtake/Blog_App.git`
 
-  - To clone a repository using GitHub CLI : `gh repo clone chumaachike/Blog_App`
+  - To clone a repository using GitHub CLI : `gh repo clone ElsonOtake/Blog_App`
 
 - Open Terminal;
 
 - Change the current working directory to the location where you want the cloned directory;
 
-- Type `git clone`, and then paste the URL you copied earlier.
+- Type `git clone`, and then paste the URL you copied earlier;
 
-### install required gems
+- Run `bundle install`;
 
-To install require gems:
+- Run `rails server`;
 
-- Open your terminal;
+- Open `http://localhost:3000/` on your browser.
 
-- Go to your application folder;
-
-- run `bundle install`.
-
-### create and run database migrations
-
-To create and run database migrations 
-
-- Open your terminal;
-
-- Go to your application folder;
-
-- run `rails db:create`,
-
-- run `rails db:migrate`.
-
-
-### add database credentials
-
-To add database credentials
-
-- Go to the Config folder 
-
-- Edit Username and Password of defualt to suit Username and Password of your Postgres
 
 ### Rspec Tests
 
@@ -83,24 +54,30 @@ To run the tests:
 
 - Open your terminal;
 
-- Go to your application folder;
+- Go to application folder;
 
-- run `rspec spec/requests`.
+- run `rspec`.
 
 
-## Author
+## Authors
 
-👤 **Francis Wayungi**
+👤 **Elson Otake**
 
-- GitHub: [@githubhandle](https://github.com/wayungi)
-- Twitter: [@twitterhandle](https://twitter.com/FrancisWayungi)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/francis-wayungi)
+- GitHub: [@elsonotake](https://github.com/elsonotake)
+- Twitter: [@elsonotake](https://twitter.com/elsonotake)
+- LinkedIn: [elsonotake](https://linkedin.com/in/elsonotake)
 
-👤 **Achike Chuma Edward**
+👤 **Jesús Vázquez**
 
-- GitHub: [@chumaachike](https://github.com/chumaachike)
-- Twitter: [@AchikeChuma](https://twitter.com/AchikeChuma)
-- LinkedIn: [Edward Achike](https://www.linkedin.com/in/edwardachike/)
+- GitHub: [@jevazquezb](https://github.com/jevazquezb)
+- Twitter: [@javb_1187](https://twitter.com/javb_1187)
+- LinkedIn: [@jevazquezb](https://www.linkedin.com/in/jevazquezb)
+
+👤 **Addisu Haile**
+
+- GitHub: [@Addisu87](https://github.com/Addisu87)
+- Twitter: [@AddisuTedla](https://twitter.com/AddisuTedla)
+- LinkedIn: [Addisu Tedla](www.linkedin.com/in/addisu-tedla/)
 
 
 ## 🤝 Contributing
